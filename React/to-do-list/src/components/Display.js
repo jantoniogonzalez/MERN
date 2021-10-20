@@ -33,7 +33,7 @@ const Display = (props) => {
                             : <p>{task.item}</p>
                         }
                         <div>
-                            <input type = "checkbox" onClick = {(e)=>completeItem(task.complete)}></input>
+                            <input type = "checkbox" onClick = {(e)=>completeItem(e.target.id)}></input>
                             <button onClick={(e)=>deleteTask(task.item)}>Delete</button>
                         </div>
                     </div>
